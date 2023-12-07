@@ -10,10 +10,16 @@ const ProductItem = ({ product }) => {
 
   return (
     <Card className="space-y-4">
-      <img src={img} alt={name} />
+      <div className="w-full h-36 ">
+        <img
+          className="w-full h-full rounded-lg object-cover"
+          src={img}
+          alt={name}
+        />
+      </div>
       <h3>{name}</h3>
       <p>{description}</p>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <Rating />
         <span>{price}₺</span>
       </div>
